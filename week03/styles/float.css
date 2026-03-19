@@ -14,7 +14,7 @@ p {
     float: right;
     margin: 0 0 15px 15px;
     border: 1px solid rgba(0 0 0 / .3);
-    box-shadow: 0 0 30px #777;
+    box-shadow: 10px 10px 15px rgba(119, 119, 119,0.7);
 }
 
 footer {
@@ -22,5 +22,5 @@ footer {
     padding-top: 5px;
     /* Remove the comment below and observe the results. */
 
-    /* clear: both; */
+    clear: both;
 }
