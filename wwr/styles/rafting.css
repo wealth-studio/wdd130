@@ -4,7 +4,6 @@
 :root {
   --deep-gb-color: #491974;
   --faded-gb-color: rgba(73, 25, 116, 0.5);
-  --text-color: #272529;
   --text-font: "poppins", Helvetica, sans-serif;
   --neutral-black: #000000;
   --neutral-white: #ffffff;
@@ -41,7 +40,6 @@ section,
 article {
   margin: 16px;
   padding: 8px;
-  color: var(--text-color);
 }
 
 header {
