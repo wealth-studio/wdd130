@@ -1,6 +1,7 @@
 :root {
   --background-color: #8a2be2;
   --deep-gb-color: #491974;
+  --active: rgb(255, 230, 0);
   --text-color: #272529;
   --text-font: "poppins", Helvetica, sans-serif;
   --box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
@@ -8,8 +9,19 @@
   --neutral-white: #ffffff;
 }
 
-main {
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header, main, footer, .grid {
   max-width: 840px;
+  margin: 0 auto;
+}
+
+main {
+  
 }
 
 main img {
@@ -22,17 +34,39 @@ main img {
 
 nav {
   background-color: var(--deep-gb-color);
-  padding: 1rem;
+  padding: 0.8rem;
   display: block;
   box-shadow: 2px, 3px, var(--neutral-black);
-  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
+p {
+  padding: 0;
+}
+
+h1 {
+  color: var(--deep-gb-color);
+  border-bottom: solid 2px var(--deep-gb-color);
+  width: 90%;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+
 nav a {
-  padding-right: 2rem;
+  padding: 0.5rem;
   color: var(--neutral-white);
   text-decoration: none;
   font-weight: bolder;
+  display: block;
+}
+
+.active{
+  color: var(--active);
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
 }
 
 aside {
@@ -43,6 +77,8 @@ aside {
   color: var(--neutral-white);
   text-align: center;
   padding: 10px;
+  grid-column: 1/2;
+  grid-row: 1/2;
 }
 
 aside img {
@@ -54,13 +90,12 @@ aside p {
   text-align: left;
 }
 
-p {
-  padding: 0;
+.grid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 }
 
-h1 {
-  color: var(--deep-gb-color);
-}
 
 footer {
   margin-top: 20px;
