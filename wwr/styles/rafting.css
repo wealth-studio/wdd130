@@ -5,6 +5,7 @@
   --neutral-black: #000000;
   --neutral-white: #ffffff;
   --active: yellow;
+  --border: 1px solid lightgray;
 }
 
 * {
@@ -94,6 +95,7 @@ a {
   height: auto;
 }
 
+
 h1 {
   position: absolute;
   top: 20px;
@@ -122,16 +124,144 @@ h1 {
   border-radius: 10px;
 }
 
+
 .active {
   color: var(--active);
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
-.wrap-img {
-  /* background-color: red; */
+.contact{
+  text-align: center;
+  color: var(--deep-gb-color);
+  /* background-color: rgb(18, 19, 18); */
+  font-size: 0.7rem;
+}
+
+.contact h1{
+  color: var(--deep-gb-color);
+  position: inherit;
+  font-size: 1.5rem;
+  
+}
+
+.contact :nth-child(4){
+  margin-bottom: 1rem;
+}
+
+.container {
   display: flex;
+  gap: 2rem;
+  height: 350px;
+}
+
+.map{
+  background-color: blue;
+  width:45%;
+  height: 100%;
+}
+
+.get_contact{
+  width: 33%;
+  height: 100%;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+  align-items: start;
+  height: 100%;
+}
+
+.personal_details{
+  display: flex;
+  flex-direction: column;
+  gap:0.5rem;
+  align-items:center;
+  justify-content: center;
+}
+
+.personal_details div{
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.radio{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+
+.radio p{
+  padding: 0;
+  margin: 0;
+  width: 50px;
+  font-size: 0.6rem;
+}
+
+.radio_select{
+  width:50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 5px;
+}
+
+.radio_select div{
+  display: flex;
+  gap: 3px;
+}
+
+.radio_select input, .subscribe input{
+  width:auto;
+}
+
+.message_purpose{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.message_purpose textarea{
+  width: 17rem;
+  border: var(--border);
+}
+
+.subscribe{
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width:110%;
+}
+
+.wide_button{
+  width: 100%;
+  padding: 0.5rem;
+}
+
+
+input{
+    padding: 10px;
+    border: var(--border);
+    width: 200px;
+    border-radius: 3px;
+}
+
+button{
+    padding: 8px;
+    background-color: var(--deep-gb-color);
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
 }
 
 .wrap-img p{

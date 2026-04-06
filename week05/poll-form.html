@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Form</title>
+    <link rel="stylesheet" href="poll-form.css">
+</head>
+<body>
+    <header>
+        <h2>WDD 130 | HTML FORM - USER POLL</h2>
+    </header>
+
+    <main>
+        <form action="post">
+
+            <!-- CONTACT INFO -->
+             
+            <fieldset>
+                <legend>Contact Information</legend>
+
+                <div class="info">
+                   <div>
+                            <label for="username">Username</label>
+                        <input type="text" id="username" required>
+                   </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@byu.edu">
+                    </div>
+                </div>
+
+               
+            </fieldset>
+                
+
+            <!-- QUESTIONS -->
+
+            <fieldset>
+                <legend>Questions</legend>
+
+                <div class="question">
+                    <div class="pick">
+                        <label for="browser"> What is your favourite internet browser</label>
+                        <select name="browser" id="browser">
+                            <option value="" selected disabled >Choose</option>
+                            <option value="1">Chrome</option>
+                            <option value="2">Edge</option>
+                            <option value="3">Safari</option>
+                            <option value="4">Brave</option>
+                            <option value="5">Opera mini</option>
+                            <option value="6">Other</option>
+                            </select>
+                    </div>
+
+                    <div class="pick tight">
+                        <label for="pet">Do you have a household pet?</label>
+                        <input type="checkbox" name="pet" id="pet">
+                    </div>
+
+                    <div class="pick list">
+                        <label for="feedback">List the places you have lived</label>
+                        <textarea name="feedback" id="feedback" rows="5"  placeholder="Ikotun, Igando, isolo Awka etc" ></textarea>
+                    </div>
+                </div>
+
+        </fieldset>
+
+        <button type="submit">Submit Poll</button>
+
+        </form>
+    </main>
+
+    <footer>
+        &copy; 2026 | HTML Form - User Poll Activity | Wealth Studio
+    </footer>
+</body>
+</html>

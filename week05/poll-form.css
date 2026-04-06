@@ -1,0 +1,121 @@
+:root{
+    --main-color: rgb(134, 134, 248);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    width: 80%;
+    margin: 0 auto;
+}
+
+header{
+    color: var(--main-color);
+}
+
+main{
+    background-color: rgb(239, 239, 252) ;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top:10px
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-bottom:10px;
+    padding: 10px;
+    border: 1px solid lightblue;
+    font-size: 0.8rem;
+}
+
+legend{
+    font-size: 1rem;
+    padding: 10px;
+    color: var(--main-color)
+}
+
+input{
+    padding: 10px;
+    /* outline: none; */
+    border: 1px solid lightgray;
+    width: 300px;
+    border-radius: 3px;
+}
+
+select{
+    width: 6rem;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+}
+
+button{
+    padding: 8px;
+    background-color: var(--main-color);
+    font-family: inherit;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+footer{
+    margin-top: 2rem;
+}
+
+/* CLASSES */
+
+.info{
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 5px;
+}
+
+.question{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pick{
+    margin-bottom: 1rem;
+}
+
+.tight{    
+    width: 80%;
+    display:flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.tight input{
+    width: 1rem;
+}
+
+.list{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.list textarea{
+    width: 80%; 
+    padding: 5px;
+    border: solid 1px lightgray;
+    border-radius: 5px;
+}
