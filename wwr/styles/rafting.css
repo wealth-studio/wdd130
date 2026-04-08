@@ -86,7 +86,7 @@ a {
 
 .hero {
   position: relative;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .hero img {
@@ -95,8 +95,43 @@ a {
   height: auto;
 }
 
+.hero-flex{
+  position: absolute;
+  top: 5rem;
+  left: 7rem;
+  width: 100%;
+  padding: 16px;
+  text-align: left;
+  /* background-color: red; */
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
 
-h1 {
+}
+
+.hero .hero-flex h1, .hero .hero-flex p{
+  position: relative;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  color: white;
+
+}
+
+.hero .hero-flex span{
+  color: yellow;
+  font-style: italic;
+}
+.hero .hero-flex button{
+  width: 10rem;
+}
+
+.professional{
+  display:flex;
+}
+
+.hero h1 {
   position: absolute;
   top: 20px;
   width: 100%;
@@ -263,8 +298,12 @@ button{
     color: white;
 }
 
+.wrap-img{
+  display: flex;
+}
+
 .wrap-img p{
-  /* margin-right: 0 ; */
+  margin-right: 0 ;
   /* background-color: aqua; */
 }
 
