@@ -75,29 +75,36 @@
           <img class="six" src="images/RAFTING-IMAGES(6).jpg" alt="rafting-img" width="200px">
         </div>
         
-        <h3>Trips not to be missed!</h3>
-        <button> See Trips </button>
-        <h2>Get in Touch</h2>
-        <div class="form">
+        <div class="click-trip">
+          <h3>Trips not to be missed!</h3>
+          <button> See More Trips </button>  
+        </div>
+      
+        </section>
 
-          <div class="get_contact">
-            <form action="post">
+        <section  class="get_contact_trip">
+          
+          <h2>Get in Touch</h2>
+
+          <div>
+            <form class="form_trip" action="post_trip">
               
-              <div class="personal_details">
+              <div class="personal_details_trip">
                 <div>
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="wealth" required>
+                  <label for="name">Name</label>
+                  <input type="text" id="name" placeholder="wealth" required>
                 </div>
               
                 <div>
-                  <label for="email">Email</label>
-                  <input type="email" id="email" placeholder="wealth@gmail.com" required>
-                </div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="wealth@gmail.com" required>
+                  </div>
               </div>
 
-              <div class="radio">
+              <div class="details">
+                <div class="radio_trip">
                 <p>Message Purpose</p>
-                <div class="radio_select" name="General_inquiry" >
+                <div class="radio_select_trip" name="General_inquiry">
                   <div>
                     <input type="radio" name="General_inquiry" id="General_inquiry"> 
                     <label for="General_inquiry">General Inquiry</label>
@@ -116,20 +123,23 @@
                 </div>
               </div>
 
-              <div class="message_purpose">
+              <div class="message_purpose_trip">
                 <label for="message">Message</label>
                 <textarea name="message" id="message" rows="4" placeholder="Type here..."></textarea>
-              </div>
-
-              <div class="subscribe">
+                <div class="subscribe">
                 <input type="checkbox" name="subscribe" id="subscribe">
-                <label for="subscribe">Please Subscribe me to the monthly newsletter</label>
+                <label class="small" for="subscribe">Please Subscribe me to the monthly newsletter</label>
+              </div>
               </div>
 
-              <button class="wide_button" type="submit">Subscribe!</button>
+              
+              </div>
+
+                <button class="wide_button" type="submit">Message us!</button>
 
             </form>
         </div>
+
       </section>
       
     </main>

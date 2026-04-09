@@ -1,6 +1,6 @@
 :root {
   --deep-gb-color: #491974;
-  --faded-gb-color: rgba(73, 25, 116, 0.5);
+  --faded-gb-color: rgb(210, 194, 248);
   --text-font: "poppins", Helvetica, sans-serif;
   --neutral-black: #000000;
   --neutral-white: #ffffff;
@@ -27,7 +27,8 @@ footer {
 }
 
 h1,
-h2, h3 {
+h2,
+h3 {
   font-family: inherit;
   color: var(--deep-gb-color);
   text-align: center;
@@ -95,7 +96,7 @@ a {
   height: auto;
 }
 
-.hero-flex{
+.hero-flex {
   position: absolute;
   top: 5rem;
   left: 7rem;
@@ -103,33 +104,33 @@ a {
   font-size: larger;
   padding: 16px;
   text-align: left;
-  /* background-color: red; */
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
-
 }
 
-.hero .hero-flex h1, .hero .hero-flex p{
+.hero .hero-flex h1,
+.hero .hero-flex p {
   position: relative;
   padding: 0;
   margin: 0;
   text-align: left;
   color: white;
-
 }
 
-.hero .hero-flex span{
+.hero .hero-flex span {
   color: yellow;
   font-style: italic;
 }
-.hero .hero-flex button{
+.hero .hero-flex button {
   width: 10rem;
 }
 
-.professional{
-  display:flex;
+/* INDEX CSS */
+
+.professional {
+  display: flex;
   /* background-color: red; */
   min-width: 840px;
   margin: 0 auto;
@@ -138,13 +139,13 @@ a {
   margin-top: 5rem;
 }
 
-.pro_image{
+.pro_image {
   width: 50%;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.join_profesional{
+.join_profesional {
   /* background-color: yellowgreen; */
   width: 45%;
   font-size: larger;
@@ -154,7 +155,7 @@ a {
   align-items: center;
 }
 
-.join_profesional h2{
+.join_profesional h2 {
   background-color: var(--deep-gb-color);
   width: 100%;
   /* text-align: center; */
@@ -163,96 +164,279 @@ a {
   color: var(--neutral-white);
 }
 
-.join_profesional p{
+.join_profesional p {
   font-size: 0.7rem;
   width: 100%;
   padding: 0;
 }
 
-.join_profesional div{
+.join_profesional div {
   display: flex;
   width: 100%;
   justify-content: start;
   align-items: center;
   margin-bottom: 5px;
 }
-.join_profesional div img{
+.join_profesional div img {
   width: 50px;
   height: 60px;
 }
 
-.join_profesional div div{
+.join_profesional div div {
   display: flex;
   flex-direction: column;
   width: 80%;
-  /* background-color: red; */
   padding-left: 1rem;
   justify-content: start;
   align-items: start;
 }
 
-.join_profesional div div h3, .join_profesional div div p{
+.join_profesional div div h3,
+.join_profesional div div p {
   padding: 0;
   margin: 0;
   /* background-color: red; */
 }
 
-.join_profesional button{
+.join_profesional button {
   width: 100%;
 }
 
-.experience{
+.experience {
   margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #b2afb4; */
 }
-.gallery{
+.gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* background-color: red; */
   gap: 1rem;
   margin: 1.5rem auto;
+  height: auto;
 }
 
 .gallery img {
   width: 100%;
-  height: 96%;
   object-fit: cover;
   display: block;
   border-radius: 8px;
   transition: 0.5s;
 }
 
-.gallery img:hover{
+.gallery img:hover {
   scale: 0.9;
   opacity: 0.8;
 }
 
-.one{
+.one {
   grid-column: span 2;
   grid-row: 1/2;
+  height: 200px;
 }
 
-.two{
+.two {
   grid-column: 3/4;
   grid-row: 1/4;
+  height: 96.5%;
 }
 
-.three{
+.three {
   grid-column: 4/5;
   grid-row: 1/2;
+  height: 200px;
 }
 
-.four{
+.four {
   grid-column: 1/2;
   grid-row: 2/3;
+  height: 200px;
 }
-.five{
+.five {
   grid-column: 2/3;
   grid-row: 2/3;
+  height: 200px;
 }
-.six{
+.six {
   grid-column: 4/5;
   grid-row: 2/3;
+  height: 200px;
 }
+
+.click-trip {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  align-items: center;
+  background-color: var(--faded-gb-color);
+  width: 50%;
+  padding: 1rem;
+  border-radius: 1000px;
+  margin: 0 auto;
+}
+
+.click-trip h3 {
+  color: var(--deep-gb-color);
+}
+.click-trip button {
+  border-radius: 1000px;
+  padding: 10px 20px;
+}
+
+.get_contact_trip {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.personal_details_trip {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.personal_details_trip label {
+  margin-right: 1rem;
+}
+
+.personal_details_trip div {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.personal_details_trip input {
+  width: 100%;
+}
+
+.details {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  height: 10rem;
+  justify-content: space-between;
+  align-items: top;
+}
+
+.radio_trip {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  justify-content: start;
+  gap: 1em;
+  align-items: start;
+}
+
+.radio_trip p {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0;
+}
+
+.radio_select_trip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 60%;
+}
+
+.radio_select_trip div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.3rem;
+}
+
+.radio_select_trip input {
+  width: auto;
+}
+
+.message_purpose_trip {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
+.message_purpose_trip textarea {
+  border-radius: 3px;
+  padding: 1rem;
+  width: 100%;
+  border: var(--border);
+}
+
+.small {
+  font-size: smaller;
+}
+
+.get_contact_trip button[type="submit"] {
+  width: 80%;
+  /* padding: 20px 0; */
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 8rem;
+}
+
+/* TRIPS CSS */
+
+.trips-main{
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 3rem;
+
+}
+
+.search{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background-color: var(--faded-gb-color);
+  width: 70%;
+  margin: auto;
+  padding: 5px 20px;
+  border-radius: 10000px;
+  
+}
+
+.search input{
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  border: none;
+  border-radius: 10000px;
+}
+
+
+.cards{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -284,28 +468,26 @@ a {
   border-radius: 10px;
 }
 
-
 .active {
   color: var(--active);
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
 
-.contact{
+.contact {
   text-align: center;
   color: var(--deep-gb-color);
   /* background-color: rgb(18, 19, 18); */
   font-size: 0.7rem;
 }
 
-.contact h1{
+.contact h1 {
   color: var(--deep-gb-color);
   position: inherit;
   font-size: 1.5rem;
-  
 }
 
-.contact :nth-child(4){
+.contact :nth-child(4) {
   margin-bottom: 1rem;
 }
 
@@ -315,17 +497,17 @@ a {
   height: 350px;
 }
 
-.map{
-  width:45%;
+.map {
+  width: 45%;
   height: 100%;
 }
 
-.get_contact{
+.get_contact {
   width: 33%;
   height: 100%;
 }
 
-form{
+form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -334,21 +516,21 @@ form{
   height: 100%;
 }
 
-.personal_details{
+.personal_details {
   display: flex;
   flex-direction: column;
-  gap:0.5rem;
-  align-items:center;
+  gap: 0.5rem;
+  align-items: center;
   justify-content: center;
 }
 
-.personal_details div{
+.personal_details div {
   display: flex;
   align-items: center;
   gap: 1.8rem;
 }
 
-.radio{
+.radio {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -356,15 +538,15 @@ form{
   gap: 10px;
 }
 
-.radio p{
+.radio p {
   padding: 0;
   margin: 0;
   width: 50px;
   font-size: 0.6rem;
 }
 
-.radio_select{
-  width:50%;
+.radio_select {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -372,63 +554,63 @@ form{
   gap: 5px;
 }
 
-.radio_select div{
+.radio_select div {
   display: flex;
   gap: 3px;
 }
 
-.radio_select input, .subscribe input{
-  width:auto;
+.radio_select input,
+.subscribe input {
+  width: auto;
 }
 
-.message_purpose{
+.message_purpose {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 5px;
 }
 
-.message_purpose textarea{
+.message_purpose textarea {
   width: 17rem;
   border: var(--border);
 }
 
-.subscribe{
+.subscribe {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  width:110%;
+  width: 110%;
 }
 
-.wide_button{
+.wide_button {
   width: 100%;
   padding: 0.5rem;
 }
 
-
-input{
-    padding: 10px;
-    border: var(--border);
-    width: 200px;
-    border-radius: 3px;
+input {
+  padding: 10px;
+  border: var(--border);
+  width: 200px;
+  border-radius: 3px;
 }
 
-button{
-    padding: 8px;
-    background-color: var(--deep-gb-color);
-    font-family: inherit;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    color: white;
+button {
+  padding: 8px;
+  background-color: var(--deep-gb-color);
+  font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
 }
 
-.wrap-img{
+.wrap-img {
   display: flex;
 }
 
-.wrap-img p{
-  margin-right: 0 ;
+.wrap-img p {
+  margin-right: 0;
   /* background-color: aqua; */
 }
 
@@ -437,8 +619,7 @@ button{
   padding: 20px 0;
 }
 
-
-.boxes{
+.boxes {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
@@ -446,11 +627,11 @@ button{
   scroll-behavior: smooth;
 }
 
-.boxes::-webkit-scrollbar{
+.boxes::-webkit-scrollbar {
   display: none;
 }
 
-.box{
+.box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -459,11 +640,11 @@ button{
   min-width: 200px;
 }
 
-.box img{
+.box img {
   border-radius: 5px;
 }
 
-.box p{
+.box p {
   margin: 0;
 }
 
@@ -476,7 +657,7 @@ footer {
   color: var(--neutral-white);
 }
 
-footer nav{
+footer nav {
   width: 120px;
   display: flex;
   justify-content: space-around;
