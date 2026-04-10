@@ -6,6 +6,7 @@
   --neutral-white: #ffffff;
   --active: yellow;
   --border: 1px solid lightgray;
+  --parag-color: rgb(177, 177, 177);
 }
 
 * {
@@ -41,6 +42,10 @@ article {
   margin: 16px;
   padding: 8px;
   font-size: smaller;
+}
+
+p{
+  color: var(--parag-color);
 }
 
 header {
@@ -127,7 +132,19 @@ a {
   width: 10rem;
 }
 
-/* INDEX CSS */
+.hero p{
+  color: var(--deep-gb-color);
+}
+
+
+
+
+
+
+
+
+
+/* INDEX (HOMEPAGE) CSS */
 
 .professional {
   display: flex;
@@ -207,8 +224,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* background-color: #b2afb4; */
 }
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -351,6 +368,9 @@ a {
   gap: 0.3rem;
 }
 
+.radio_trip p{
+  color: #000000;
+}
 .radio_select_trip input {
   width: auto;
 }
@@ -381,12 +401,22 @@ a {
   margin-bottom: 8rem;
 }
 
+
+
+
+
+
+
 /* TRIPS CSS */
 
-.trips-main{
+.main-center{
   width: 100%;
   margin: 0 auto;
   margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: red; */
 
 }
 
@@ -406,17 +436,72 @@ a {
 .search input{
   width: 100%;
   background-color: transparent;
-  color: white;
+  color: var(--deep-gb-color);
   border: none;
   border-radius: 10000px;
+  outline: none;
 }
 
-
 .cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 3rem;
+
+}
+
+.cards p, .cards h3{
+  margin: 0;
+  padding: 0;
+  text-align: center;
   
 }
 
 
+.card-details{
+  /* background-color: red; */
+  display: flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+  height: 20rem;
+}
+
+.card-details img{
+  border-radius: 5px;
+  transition: 0.5s;
+  object-fit: fill;
+  height: 400px;
+  /* width: 100%; */
+}
+
+
+.card-details img:hover{
+  scale: 0.95;
+  opacity: 0.5;
+}
+
+.equipment{
+  background: var(--faded-gb-color);
+  border-radius:5px;
+  padding: 3rem;
+}
+
+.trips{
+  margin-bottom: 5rem;
+}
+
+.trips table, td, tr, th{
+  border-collapse: collapse;
+  border: 2px solid var(--faded-gb-color);
+  text-align: center;
+  padding: 1rem;
+}
+
+.trips table th{
+  background-color: var(--deep-gb-color);
+  color: var(--neutral-white)
+}
 
 
 
@@ -424,21 +509,7 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* CONTACT US CSS */
 
 .hero h1 {
   position: absolute;
@@ -611,7 +682,6 @@ button {
 
 .wrap-img p {
   margin-right: 0;
-  /* background-color: aqua; */
 }
 
 .wrap-img img {

@@ -25,17 +25,22 @@
       </nav>
     </header>
 
-    <main class="trips-main">
+    <main class="main-center">
       <!-- SEARCH AND CARDS - HERO -->
 
+      <h2>Available Trips</h2>
+
       <div class="search">
+
         <input type="text" placeholder="Search for trips">
         <img src="images/icons/search.svg" alt="search-icon" />
       </div>
 
+      
+
       <div class="cards">
         <div class="card-details">
-          <img src="images/RAFTING-IMAGES(1).jpg" alt="rafting" width="200px" />
+          <img src="images/RAFTING-IMAGES(4).jpg" alt="rafting" width="200px" />
           <h3>Mild Waves</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -43,7 +48,7 @@
           </p>
         </div>
         <div class="card-details">
-          <img src="" alt="rafting" width="200px" />
+          <img src="images/RAFTING-IMAGES(1).jpg" alt="rafting" width="200px" />
           <h3>Gentle Waves</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -51,7 +56,7 @@
           </p>
         </div>
         <div class="card-details">
-          <img src="" alt="rafting" width="200px" />
+          <img src="images/RAFTING-IMAGES(2).jpg" alt="rafting" width="200px" />
           <h3>Strong Waves</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -59,7 +64,7 @@
           </p>
         </div>
         <div class="card-details">
-          <img src="" alt="rafting" width="200px" />
+          <img src="images/RAFTING-IMAGES(4).jpg" alt="rafting" width="200px" />
           <h3>Deep Waters</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -67,7 +72,7 @@
           </p>
         </div>
         <div class="card-details">
-          <img src="" alt="rafting" width="200px" />
+          <img src="images/rafting_3.jpg" alt="rafting" width="200px" />
           <h3>Rocky Waters</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -75,7 +80,7 @@
           </p>
         </div>
         <div class="card-details">
-          <img src="" alt="rafting" width="200px" />
+          <img src="images/death-toll.jpg" alt="rafting" width="200px" />
           <h3>Death Troll</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -86,13 +91,13 @@
 
       <!-- AVAILABLE EQUPMENTS -->
 
-      <section>
+      <section class="main-center equipment">
         <h2>Our Available Equipments</h2>
 
         <!-- QUIPMENT CARDS -->
-        <div class="eqipment-cards">
-          <div class="equipment-card-details">
-            <img src="" alt="" />
+        <div class="cards">
+          <div class="card-details">
+            <img src="images/Rafting-boat-3.png" alt="equipments" width="200px" />
             <h3>Rafting Boats</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -100,8 +105,8 @@
             </p>
           </div>
 
-          <div class="equipment-card-details">
-            <img src="" alt="" />
+          <div class="card-details">
+            <img src="images/Rafting-equipment-2.png" alt="equipments" width="200px" />
             <h3>Safety Kits</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -109,8 +114,8 @@
             </p>
           </div>
 
-          <div class="equipment-card-details">
-            <img src="" alt="" />
+          <div class="card-details">
+            <img src="images/rafting_4.jpg" alt="equipments" width="200px" />
             <h3>Trainers</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
@@ -122,13 +127,13 @@
 
       <!-- TRIPS TABLE -->
 
-      <section class="trips-table">
+      <section class="main-center trips">
         <h2>Weekly Available Trips</h2>
 
         <!-- TABLE -->
         <table>
           <thead>
-            <th></th>
+            <th class="empty"></th>
             <th>8 - 10am</th>
             <th>12 - 2pm</th>
             <th>4 - 6pm</th>
@@ -138,38 +143,38 @@
             <tr>
               <th>Mon.</th>
               <td>Mild waves</td>
-              <td>Gentle waves</td>
-              <td>Gentle waves</td>
+              <td colspan="2"> Gentle waves </td>
+              <!-- <td>Gentle waves</td> -->
             </tr>
             <tr>
               <th>Tues.</th>
               <td>Gentle waves</td>
               <td>Mild waves</td>
-              <td>Strong waves</td>
+              <td rowspan="3">Strong waves</td>
             </tr>
             <tr>
               <th>Wed.</th>
-              <td>Deep waters</td>
-              <td>Deep waters</td>
-              <td>Strong waves</td>
+              <td colspan="2">Deep waters</td>
+              <!-- <td>Deep waters</td> -->
+              <!-- <td>Strong waves</td> -->
             </tr>
             <tr>
               <th>Thur.</th>
               <td>Gentle waves</td>
               <td>Mild waves</td>
-              <td>Strong waves</td>
+              <!-- <td>Strong waves</td> -->
             </tr>
             <tr>
               <th>Fri.</th>
-              <td>Rocky waters</td>
-              <td>Death Troll</td>
-              <td>Death Troll</td>
+              <td rowspan="2">Rocky waters</td>
+              <td rowspan="2" colspan="2">Death Troll</td>
+              <!-- <td>Death Troll</td> -->
             </tr>
             <tr>
               <th>Sat.</th>
-              <td>Rocky waters</td>
-              <td>Death Troll</td>
-              <td>Death Troll</td>
+              <!-- <td>Rocky waters</td> -->
+              <!-- <td>Death Troll</td>
+              <td>Death Troll</td> -->
             </tr>
           </tbody>
         </table>
